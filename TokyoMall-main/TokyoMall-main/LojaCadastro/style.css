@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --corPrimaria: #b392ac;
+  --corSecundaria: #d1b3c4;
+  --corTerciaria: #e8c2ca;
+  --corFundo: #fffafa;
+  --corAtencao: #735d78;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--corFundo);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "PT Sans", sans-serif;
+}
+
+body > header {
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  background-color: var(--corAtencao);
+}
+
+body > header > nav {
+  margin-left: 5%;
+  width: 100%;
+}
+
+body > header > nav > a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  margin-inline: 1%;
+}
+
+body > header > nav > a:hover {
+  color: var(--corTerciaria);
+  transition: 0.3s;
+}
+
+#carrossel {
+  height: 300px;
+  width: auto;
+}
+
+#carrossel > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+.p {
+  padding: 1%;
+}
