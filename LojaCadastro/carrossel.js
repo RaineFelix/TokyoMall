@@ -10,18 +10,26 @@ const carrossel = document.querySelector("#carrossel")
 //selecionando o elemento imagem dentro do carrossel
 const imagem = document.querySelector("#carrossel>img") 
 
+let indexAtual = 0
+
 function trocaImagem() {
 
-if (){
+    if (indexAtual < imagensCarrossel.length-1) {
 
+        indexAtual++
 
+    } else {
 
-}
+        indexAtual = 0
+
+    }
+
+    imagem.src = imagensCarrossel[indexAtual]
 
 }
 
 setInterval(() => {
-    imagem.src = imagensCarrossel[]
+    trocaImagem()
 }, 2000);
 
 

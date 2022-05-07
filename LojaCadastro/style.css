@@ -53,3 +53,14 @@ body>header>nav>a:hover{
     color: var(--corTerciaria);
     transition: 0.3s;
 }
+
+#carrossel {
+height: 300px ;
+width:100% ;
+}
+
+#carrossel>imagem {
+
+
+
+}
