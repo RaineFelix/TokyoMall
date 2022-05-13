@@ -2,9 +2,10 @@
 const imagem = document.querySelector("#carrossel>img");
 
 const imagensCarrossel = [
-  "https://flamboyant.com.br/blog/wp-content/uploads/2020/08/074E474F-BAD3-4A87-98B0-F67CE73CF7D4.jpeg",
-  "https://www.falandodeviagem.com.br/imagens19/ViaParqueKids2.jpg",
-  "https://invexo.com.br/blog/wp-content/uploads/2020/07/lojas-do-shopping-leblon-1.jpg",
+  "https://magicgramas.com.br/blog/wp-content/uploads/2018/11/2.jpg",
+  "https://d3nuqriibqh3vw.cloudfront.net/c4060b68092693.5b50a85b11e1c.jpg?T2YL_5u5SyqPYNjbjRmSAqJur.VBcFM.",
+  "https://universalmediaus.com/wp-content/uploads/2015/07/universal-media-outdoor-advertising-shopping-malls-utah-california-newyork-florida-boston.jpg",
+  "https://media-manager.noticiasaominuto.com.br/1920/naom_600a868105b81.jpg"
 ];
 
 let indexAtual = 0;
