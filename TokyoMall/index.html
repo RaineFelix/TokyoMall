@@ -1,44 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TokyoMall</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <h1>TokyoMall</h1>
-      <nav>
-        <a href="">Início</a>
-        <a href="">Lojas</a>
-        <a href="">Praça de Alimentação</a>
-        <a href="">Cinema</a>
-        <a href="">Sobre Nós</a>
-      </nav>
-    </header>
-    <main>
-      <!-- 
-            - carrossel
-            - filmes em destaque
-            - marcas da praça de alimentação
-            - lojas
-         -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TokyoMall</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
 
-      <div id="carrossel">
-        <img
-          src="https://magicgramas.com.br/blog/wp-content/uploads/2018/11/2.jpg"
-          alt=""
-        />
-      </div>
+<body>
+  <header>
+    <h1>TokyoMall</h1>
+    <nav>
+      <a href="">Início</a>
+      <a href="">Lojas</a>
+      <a href="">Praça de Alimentação</a>
+      <a href="">Cinema</a>
+      <a href="">Sobre Nós</a>
+    </nav>
+  </header>
+  <main>
 
-   <div class="p">
-        <h1>NOVIDADES</h1>
+    <div id="carrossel">
+      <img src="https://magicgramas.com.br/blog/wp-content/uploads/2018/11/2.jpg" alt="" />
+    </div>
 
-        <div class="p" id="informacoes">
-          
+    <div class="p">
+      <h1>NOVIDADES</h1>
+
+      <div class="p" id="informacoes">
+
         <div class="p cartaoInfo">
 
           <p>
@@ -51,48 +44,49 @@
 
         <div class="p cartaoInfo">
           <p>
-            Playgrounds Interativos para suas crianças! Venha conhecer o shopping e deixe seus filhos com profissionais especializados no cuidado com as crianças.
+            Playgrounds Interativos para suas crianças! Venha conhecer o shopping e deixe seus filhos com profissionais
+            especializados no cuidado com as crianças.
           </p>
           <img src="https://magicgramas.com.br/blog/wp-content/uploads/2018/11/2.jpg" />
         </div>
 
         <div class="p cartaoInfo">
           <p>
-            Seja membro do nosso clube especial TokyoMall!! Descontos em todas
-            as lojas parceiras com até 70% OFF
+            Venha curtir as melhores novidades do cinema, nacional e internacional!
           </p>
           <img src="https://exame.com/wp-content/uploads/2020/06/cinema-coronavirus.jpg" />
-        </div>
-
-        </div>
-
         </div>
 
       </div>
 
     </div>
 
-      <div id="cinema">
-        <h1 class="p">Filmes em destaque</h1>
-        <p class="p">
-          Confira nossa programação com os melhores filmes internacionais da
-          atualidade!
-        </p>
+    <div id="cinema">
+      <h1 class="p">Filmes em destaque</h1>
+      <p class="p">
+        Confira nossa programação com os melhores filmes internacionais da
+        atualidade!
+      </p>
 
-        <div class="cartoes p"></div>
-      </div>
+      <div class="cartoes p"></div>
+    </div>
 
-      <div id="praca">
-        <h1 class="p">Marcas parceiras</h1>
-        <p class="p">Conheça as melhores marcas do TokyoWall!</p>
+    <div id="praca">
+      <h1 class="p">Marcas parceiras</h1>
+      <p class="p">Conheça as melhores marcas do TokyoWall!</p>
 
-        <div id="marcas"></div>
-      </div>
-    </main>
-    <footer>
-      <p>Feito por Raíne Vitória Felix Moreira &copy; 2022</p>
-    </footer>
-    <script src="carrossel.js"></script>
-    <script src="funcoes.js"></script>
-  </body>
+      <div id="marcas" class="p"></div>
+    </div>
+  </main>
+  <footer class="fixar">
+    <p>Feito por Raíne Vitória Felix Moreira &copy; 2022</p>
+  </footer>
+  <script src="carrossel.js"></script>
+  <script src="funcoes.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>

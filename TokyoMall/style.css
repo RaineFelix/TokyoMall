@@ -11,7 +11,7 @@ img {
 }
 
 :root {
-  --corPrimaria: #187498;
+  --corPrimaria: #74121d;
   --corSecundaria: #36ae7c;
   --corTerciaria: #f9d923;
   --corFundo: #fffafa;
@@ -63,6 +63,10 @@ body > header > nav > a:hover {
   transition: 0.3s;
 }
 
+.p {
+  padding: 1%;
+}
+
 #carrossel {
   height: 500px;
   width: auto;
@@ -72,12 +76,34 @@ body > header > nav > a:hover {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  filter: brightness(0.5);
+  filter: brightness(0.7);
   /*border-radius: 10px; -> arredondar cantos da imagem*/
 }
 
-.p {
-  padding: 1%;
+#informacoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-areas: "txt1 txt2 txt3"; */
+  gap: 6px;
+  height: fit-content;
+}
+.cartaoInfo {
+  background-color: white;
+  justify-content: center;
+  text-align: justify;
+  padding: 5%;
+}
+
+.cartaoInfo > p {
+  font-family: "Lato", sans-serif;
+  font-size: 18pt;
+  margin-bottom: 2%;
+}
+
+.cartaoInfo > img {
+  height: 400px;
+  width: 600px;
+  object-fit: cover;
 }
 
 #cinema {
@@ -102,11 +128,16 @@ body > header > nav > a:hover {
   transform: scale(1.1);
 }
 
+#praca {
+  height: max-content;
+}
+
 #marcas {
   display: grid;
   /*Nas colunas, repita 3 vezes o tamanho de uma fração*/
   grid-template-columns: repeat(6, 1fr);
   height: 300px;
+  gap:2%;
 }
 
 #marcas img {
@@ -128,32 +159,69 @@ footer {
   color: white;
 }
 
-#informacoes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* grid-template-areas: "txt1 txt2 txt3"; */
-  gap: 6px;
+@media (max-width: 1200px) {
+  #informacoes {
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+
+  #marcas {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 30vh;
+    gap: 2%;
+  }
+
+  #cinema {
+    height: max-content;
+    justify-content: center;
+  }
+
+  .cartoes {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5%;
+    gap: 2%;
+  }
+
+
+  .fixar {
+    bottom: 0;
+   display: grid;
+    width: 100%;
+    text-align: center;
+  }
 }
 
-.cartaoInfo {
-  background-color: white;
-  justify-content: center;
-  text-align: justify;
-  padding: 5%;
-}
+@media (max-width: 768px) {
+  #informacoes {
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
 
-.cartaoInfo > p {
-  font-family: "Lato", sans-serif;
-  font-size: 18pt;
-  margin-bottom: 2%;
-}
-
-.cartaoInfo > img {
-
-height: 400px;
-width: 600px;
-object-fit: cover;
+  #marcas {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50vh;
+  }
 
 
+  #cinema {
+    height: max-content;
+  }
 
+  .cartoes {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5%;
+    gap: 2%;
+  }
+
+
+  .fixar {
+    bottom: 0;
+   display: grid;
+    width: 100%;
+    text-align: center;
+  }
 }

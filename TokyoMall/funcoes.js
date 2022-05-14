@@ -4,7 +4,7 @@ function renderizar(lista, seletor) {
 
   //pra cada item da lista faça: elemento é igual a ele mesmo + item
   lista.forEach((item) => {
-    elementoString += `<img src = '${item}'>`;
+    elementoString += `<img src = '${item}' data-aos="flip-left" >`;
   });
 
   //adicionando html dentro do elemento
@@ -14,7 +14,7 @@ const marcasPraca = [
   "https://99prod.s3.amazonaws.com/uploads/c1723294-8cc6-4692-a9bd-8fdbcac6d50d/riachuelo.png",
   "https://acontecendoaqui.com.br/wp-content/uploads/2018/01/mcdonalds_16.jpg",
   "http://deuclick.com.br/wp-content/uploads/2021/07/burguer-king-marcas-e-etc.jpg",
-  "https://www.nicepng.com/png/detail/209-2091502_file-popeyes-logo-svg-popeyes-louisiana-kitchen.png",
+  "https://play-lh.googleusercontent.com/8EcPDiW4wi9QlZzut0eDCM3fYL8ijbr1RSVQLLxQdVaBbWDGYgryKaQL84hxfw1Qcw",
   "https://www.anacouto.com.br/wp-content/uploads/2021/07/GALERIA-SITE-AMERICANAS.png",
   "https://cdn.guiadosac.com.br/CHANEL.png",
 ];
